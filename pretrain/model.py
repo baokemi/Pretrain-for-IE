@@ -37,9 +37,9 @@ class RGCNLayer(nn.Module):
         return z
 
 
-class Graph_RTGSN(nn.Module):
+class Graph_RGSN(nn.Module):
     def __init__(self, id_dim, input_dim, hidden_dim, num_layers, num_relations):
-        super(Graph_RTGSN, self).__init__()
+        super(Graph_RGSN, self).__init__()
         self.layers = nn.ModuleList()
         self.batch_norms = nn.ModuleList()
         self.id_dim = id_dim

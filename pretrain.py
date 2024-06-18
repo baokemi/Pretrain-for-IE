@@ -11,9 +11,9 @@ def get_parser():
     parser = argparse.ArgumentParser(description='SKIE Arguments.')
 
     # Key setting
-    parser.add_argument("--method", type=str, default='RTGSN',
+    parser.add_argument("--method", type=str, default='RGSN',
                         help="Use different contrastive learning methods. Can be chosen from "
-                             "{'RTGSN', 'GSN'}, ")
+                             "{'RGSN', 'GSN'}, ")
     parser.add_argument("--dataset", type=str, default='NYT10-1')
     parser.add_argument("--feature", type=str, default='sub')
     parser.add_argument("--amr_dataset_file", type=str, default=None)
@@ -53,7 +53,7 @@ def get_parser():
     parser.add_argument("--hid_units", type=int, default=64,
                         help="Dimension of hidden layers and embedding.")
     parser.add_argument("--num_layer", type=int, default=3,
-                        help="Number of RTGSN layers.")
+                        help="Number of RGSN layers.")
     parser.add_argument("--sample", type=int, default=None,
                         help="Number of sampled graphs to train model.")
 

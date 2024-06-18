@@ -1,5 +1,5 @@
 from .GSN import GSN
-from .RTGSN import RTGSN
+from .RGSN import RGSN
 
 
-__all__ = ["GSN", "RTGSN"]
+__all__ = ["GSN", "RGSN"]

@@ -43,8 +43,8 @@ class Method:
 
 
     def train(self):
-        if self.method == 'RTGSN':
-            return RTGSN(self.args.times, self.args, self.path, self.logger, self.amr_dataset, self.text_dataset, self.model_name)
+        if self.method == 'RGSN':
+            return RGSN(self.args.times, self.args, self.path, self.logger, self.amr_dataset, self.text_dataset, self.model_name)
         elif self.method == 'GSN':
             return GSN(self.args.times, self.args, self.path, self.logger, self.amr_dataset, self.text_dataset, self.model_name)
         else:
